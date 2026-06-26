@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <circle cx="100" cy="100" r="90" fill="#e8f4fc"/>
+  <path d="M100 30L40 62v76l60 32 60-32V62L100 30z" fill="#446084" stroke="#2d4a6e" stroke-width="2"/>
+  <path d="M100 30v140M40 62l60 32 60-32" stroke="#2d4a6e" stroke-width="2"/>
+  <circle cx="78" cy="88" r="16" fill="#fff"/><text x="78" y="94" text-anchor="middle" fill="#446084" font-family="Poppins,sans-serif" font-size="14" font-weight="700">O</text>
+  <circle cx="122" cy="88" r="16" fill="#ff6f66"/><text x="122" y="94" text-anchor="middle" fill="#fff" font-family="Poppins,sans-serif" font-size="14" font-weight="700">A</text>
+  <rect x="65" y="145" width="70" height="8" rx="4" fill="#a1bedb"/>
+</svg>

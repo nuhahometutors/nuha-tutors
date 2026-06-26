@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US" class="loading-site">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Nuha Tutors</title>
+  <meta name="description" content="Contact Nuha Tutors for online tuition inquiries and support.">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body data-page="contact">
+<div id="site-loader"></div>
+<div id="site-header"></div>
+
+<main>
+  <section class="page-hero">
+    <div class="page-hero-split">
+      <div class="page-hero-text">
+        <nav class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Contact</span></nav>
+        <h1>Contact Us</h1>
+        <p>Share your requirements and we'll match you with the perfect tutor.</p>
+      </div>
+      <img src="assets/beacon/home-tuition.png" alt="" class="illustration illustration-page-hero">
+    </div>
+  </section>
+
+  <section class="audience-section container">
+    <div class="section-header sm">
+      <div class="divider-line"></div>
+      <h2>Who Are You?</h2>
+      <div class="divider-line right"></div>
+    </div>
+    <div class="audience-grid">
+      <button type="button" class="audience-card audience-parent is-selected" data-audience="parent" aria-pressed="true">
+        <div class="audience-card-visual">
+          <img src="assets/beacon/MaleAndFemaleTutors.svg" alt="" class="illustration">
+        </div>
+        <h3>Parents</h3>
+        <p>Looking for a trusted tutor for your child — online or home tuition.</p>
+      </button>
+      <button type="button" class="audience-card audience-teen" data-audience="teen" aria-pressed="false">
+        <div class="audience-card-visual">
+          <img src="assets/beacon/OneOnOneTutoring.svg" alt="" class="illustration">
+        </div>
+        <h3>Teens</h3>
+        <p>Need help with studies, exams, or finding the right subject expert.</p>
+      </button>
+    </div>
+  </section>
+
+  <div class="contact-grid" id="contact-form">
+    <div class="contact-info-card">
+      <h3>Get in Touch</h3>
+      <p>We follow every inquiry with utmost care and are available for sincere consultation.</p>
+      <div id="contact-info-details"></div>
+    </div>
+
+    <div class="contact-forms-wrap">
+      <div class="contact-role-form form-card" data-role="parent" style="margin:0">
+        <h3 style="margin-top:0">Parent Inquiry</h3>
+        <p class="form-intro">Tell us about your child's grade, subjects, and whether you prefer online or home tuition.</p>
+        <form id="parentContactForm" data-form-type="parent-inquiry" data-subject="Parent Inquiry - Nuha Tutors" onsubmit="return handleFormSubmit(event, 'Thank you! Our team will contact you shortly.')">
+          <input type="hidden" name="access_key" value="70216ef2-61d5-434e-998e-01e3098d0a53">
+          <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <input type="hidden" name="role" value="parent">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="pName">Full Name *</label>
+              <input type="text" id="pName" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="pPhone">Phone *</label>
+              <input type="tel" id="pPhone" name="phone" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="pEmail">Email *</label>
+            <input type="email" id="pEmail" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="pServiceTrigger">Service Needed</label>
+            <div class="custom-select" id="pServiceSelect" data-placeholder="Select a service" data-default-icon="layers">
+              <input type="hidden" id="pService" name="service" value="">
+              <button type="button" class="custom-select-trigger is-placeholder" id="pServiceTrigger" aria-haspopup="listbox" aria-expanded="false">
+                <span class="custom-select-main">
+                  <span class="custom-select-icon" aria-hidden="true"></span>
+                  <span class="custom-select-value custom-select-placeholder">Select a service</span>
+                </span>
+                <span class="custom-select-arrow" aria-hidden="true"></span>
+              </button>
+              <ul class="custom-select-options" role="listbox" aria-label="Service Needed">
+                <li class="custom-select-option" role="option" data-value="Online Tutoring" tabindex="-1"><span class="custom-select-option-icon" data-icon="monitor" aria-hidden="true"></span><span class="custom-select-option-label">Online Tutoring</span></li>
+                <li class="custom-select-option" role="option" data-value="Home Tuition" tabindex="-1"><span class="custom-select-option-icon" data-icon="home" aria-hidden="true"></span><span class="custom-select-option-label">Home Tuition</span></li>
+                <li class="custom-select-option" role="option" data-value="O-Level Tutoring" tabindex="-1"><span class="custom-select-option-icon" data-icon="graduation" aria-hidden="true"></span><span class="custom-select-option-label">O-Level Tutoring</span></li>
+                <li class="custom-select-option" role="option" data-value="A-Levels Tutoring" tabindex="-1"><span class="custom-select-option-icon" data-icon="graduation" aria-hidden="true"></span><span class="custom-select-option-label">A-Levels Tutoring</span></li>
+                <li class="custom-select-option" role="option" data-value="IGCSE Tutoring" tabindex="-1"><span class="custom-select-option-icon" data-icon="book" aria-hidden="true"></span><span class="custom-select-option-label">IGCSE Tutoring</span></li>
+                <li class="custom-select-option" role="option" data-value="Other" tabindex="-1"><span class="custom-select-option-icon" data-icon="layers" aria-hidden="true"></span><span class="custom-select-option-label">Other</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="pMessage">Your Message *</label>
+            <textarea id="pMessage" name="message" rows="4" required placeholder="Child's grade, subjects, preferred schedule, online or home tuition..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary form-submit">Send Inquiry</button>
+        </form>
+      </div>
+
+      <div class="contact-role-form form-card is-hidden" data-role="teen" style="margin:0" hidden>
+        <h3 style="margin-top:0">Teen Inquiry</h3>
+        <p class="form-intro">Share your subjects, exam board, and what you need help with.</p>
+        <form id="teenContactForm" data-form-type="teen-inquiry" data-subject="Teen Inquiry - Nuha Tutors" onsubmit="return handleFormSubmit(event, 'Thank you! Our team will contact you shortly.')">
+          <input type="hidden" name="access_key" value="70216ef2-61d5-434e-998e-01e3098d0a53">
+          <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <input type="hidden" name="role" value="teen">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="tName">Full Name *</label>
+              <input type="text" id="tName" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="tPhone">Phone *</label>
+              <input type="tel" id="tPhone" name="phone" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="tEmail">Email *</label>
+            <input type="email" id="tEmail" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="tServiceTrigger">Service Needed</label>
+            <div class="custom-select" id="tServiceSelect" data-placeholder="Select a service" data-default-icon="layers">
+              <input type="hidden" id="tService" name="service" value="">
+              <button type="button" class="custom-select-trigger is-placeholder" id="tServiceTrigger" aria-haspopup="listbox" aria-expanded="false">
+                <span class="custom-select-main">
+                  <span class="custom-select-icon" aria-hidden="true"></span>
+                  <span class="custom-select-value custom-select-placeholder">Select a service</span>
+                </span>
+                <span class="custom-select-arrow" aria-hidden="true"></span>
+              </button>
+              <ul class="custom-select-options" role="listbox" aria-label="Service Needed">
+                <li class="custom-select-option" role="option" data-value="Online Tutoring" tabindex="-1"><span class="custom-select-option-icon" data-icon="monitor" aria-hidden="true"></span><span class="custom-select-option-label">Online Tutoring</span></li>
+                <li class="custom-select-option" role="option" data-value="Home Tuition" tabindex="-1"><span class="custom-select-option-icon" data-icon="home" aria-hidden="true"></span><span class="custom-select-option-label">Home Tuition</span></li>
+                <li class="custom-select-option" role="option" data-value="O-Level Tutoring" tabindex="-1"><span class="custom-select-option-icon" data-icon="graduation" aria-hidden="true"></span><span class="custom-select-option-label">O-Level Tutoring</span></li>
+                <li class="custom-select-option" role="option" data-value="A-Levels Tutoring" tabindex="-1"><span class="custom-select-option-icon" data-icon="graduation" aria-hidden="true"></span><span class="custom-select-option-label">A-Levels Tutoring</span></li>
+                <li class="custom-select-option" role="option" data-value="IGCSE Tutoring" tabindex="-1"><span class="custom-select-option-icon" data-icon="book" aria-hidden="true"></span><span class="custom-select-option-label">IGCSE Tutoring</span></li>
+                <li class="custom-select-option" role="option" data-value="Other" tabindex="-1"><span class="custom-select-option-icon" data-icon="layers" aria-hidden="true"></span><span class="custom-select-option-label">Other</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="tMessage">Your Message *</label>
+            <textarea id="tMessage" name="message" rows="4" required placeholder="Your grade, subjects, exam board, and what you need help with..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary form-submit">Send Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+<script src="js/theme.js"></script>
+<script src="js/layout.js?v=4"></script>
+<script src="js/icons.js"></script>
+<script src="js/submissions-store.js?v=5"></script>
+<script src="js/forms.js?v=5"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

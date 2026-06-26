@@ -1,0 +1,11 @@
+{
+  "name": "nuha-tutors",
+  "private": true,
+  "scripts": {
+    "setup:blob": "powershell -ExecutionPolicy Bypass -File scripts/setup-blob-store.ps1",
+    "deploy:main": "powershell -ExecutionPolicy Bypass -File scripts/deploy-main-project.ps1"
+  },
+  "dependencies": {
+    "@vercel/blob": "^2.4.1"
+  }
+}

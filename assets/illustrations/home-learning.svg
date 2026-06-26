@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420" fill="none" role="img" aria-label="Student learning online with global tutor support">
+  <defs>
+    <linearGradient id="globeFill" x1="352" y1="64" x2="448" y2="160" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4a6fa5"/>
+      <stop offset="1" stop-color="#2d4a6e"/>
+    </linearGradient>
+    <linearGradient id="screenFill" x1="238" y1="208" x2="336" y2="270" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e8f4fc"/>
+    </linearGradient>
+    <linearGradient id="accentFill" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#e07a5f"/>
+      <stop offset="1" stop-color="#f4a261"/>
+    </linearGradient>
+    <linearGradient id="bubbleFill" x1="60" y1="40" x2="460" y2="380" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e8f4fc" stop-opacity="0"/>
+      <stop offset="0.45" stop-color="#eef6fc" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#fff3ee" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .ink { stroke: #1a2332; fill: none; }
+    .ink-fill { fill: #1a2332; }
+    @keyframes floatA {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+    @keyframes floatB {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-8px) rotate(-2deg); }
+    }
+    @keyframes floatC {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+    @keyframes floatD {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-7px) rotate(2deg); }
+    }
+    @keyframes floatE {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
+    }
+    @keyframes sparkle {
+      0%, 100% { opacity: 0.35; transform: scale(0.9); }
+      50% { opacity: 1; transform: scale(1.1); }
+    }
+    .float-a { animation: floatA 5s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+    .float-b { animation: floatB 6.5s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+    .float-c { animation: floatC 7s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+    .float-d { animation: floatD 5.8s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+    .float-e { animation: floatE 6.2s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+    .sparkle { animation: sparkle 2.4s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+  </style>
+
+  <!-- Connection arcs -->
+  <g opacity="0.45" stroke="#9bb8d9" stroke-width="1.8" stroke-dasharray="5 7" fill="none">
+    <path d="M114 92c40-28 88-36 130-24">
+      <animate attributeName="stroke-dashoffset" values="0;-24" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M198 52c36 8 72 24 96 52">
+      <animate attributeName="stroke-dashoffset" values="0;-24" dur="3.6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M360 72c28 18 44 44 52 72">
+      <animate attributeName="stroke-dashoffset" values="0;-24" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M286 250c52-8 96-28 132-58" stroke="#e07a5f" opacity="0.35">
+      <animate attributeName="stroke-dashoffset" values="0;-24" dur="3.2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Desk scene -->
+  <g id="desk-scene">
+    <path d="M118 318c0-42 18-68 44-78 8-3 16-5 24-5 6 0 12 1 18 3" class="ink" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M186 235c14-8 30-12 46-12 38 0 68 28 72 66 2 18 0 36-6 53" class="ink" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M198 218c10-18 28-30 50-32 30-2 56 16 64 44" class="ink-fill"/>
+    <path d="M214 206c6-2 12-3 18-3 20 0 36 12 42 30" class="ink-fill"/>
+    <circle cx="248" cy="214" r="3" fill="#fff"/>
+    <path d="M236 220c4 6 10 10 18 10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M252 228c8 2 14 8 16 16" class="ink" stroke-width="2" stroke-linecap="round"/>
+    <ellipse cx="270" cy="248" rx="10" ry="14" class="ink" stroke-width="2"/>
+    <path d="M168 300l-18 42M148 342h44M154 318c-8 10-12 22-12 34M286 318c10 8 18 18 22 30M300 348c6 0 12-2 16-6" class="ink" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M132 286c-10 18-14 38-12 58M150 344c18 8 38 10 58 6M120 344h70" class="ink" stroke-width="2" stroke-linecap="round"/>
+    <rect x="198" y="286" width="168" height="8" rx="2" class="ink-fill"/>
+    <path d="M206 294v34M350 294v34" class="ink" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- Monitor -->
+    <g>
+      <rect x="228" y="198" width="118" height="82" rx="6" class="ink" stroke-width="2.2"/>
+      <rect x="238" y="208" width="98" height="62" rx="3" fill="url(#screenFill)" class="ink" stroke-width="1.5"/>
+      <path d="M248 220h58" class="ink" stroke-width="2" stroke-linecap="round" opacity="0.2">
+        <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.4s" repeatCount="indefinite"/>
+      </path>
+      <path d="M248 232h72" class="ink" stroke-width="2" stroke-linecap="round" opacity="0.2">
+        <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.4s" begin="0.4s" repeatCount="indefinite"/>
+      </path>
+      <path d="M248 244h46" class="ink" stroke-width="2" stroke-linecap="round" opacity="0.2">
+        <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.4s" begin="0.8s" repeatCount="indefinite"/>
+      </path>
+      <path d="M248 256h64" class="ink" stroke-width="2" stroke-linecap="round" opacity="0.2">
+        <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.4s" begin="1.2s" repeatCount="indefinite"/>
+      </path>
+      <rect x="275" y="280" width="24" height="10" class="ink-fill"/>
+      <path d="M287 290v8" class="ink" stroke-width="2.2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Mouse -->
+    <g>
+      <path d="M334 302c8-2 14 2 14 10s-6 12-14 10" class="ink" stroke-width="2" stroke-linecap="round"/>
+      <path d="M318 310h18" class="ink" stroke-width="2.2" stroke-linecap="round">
+        <animateTransform attributeName="transform" type="translate" values="0 0;4 0;0 0" dur="2.8s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <!-- Clock -->
+  <g class="float-a">
+    <circle cx="88" cy="92" r="26" class="ink" stroke-width="2.2"/>
+    <circle cx="88" cy="92" r="2" class="ink-fill"/>
+    <path d="M88 92V76" class="ink" stroke-width="2" stroke-linecap="round"/>
+    <path d="M88 92l10 8" class="ink" stroke-width="2" stroke-linecap="round">
+      <animateTransform attributeName="transform" type="rotate" from="0 88 92" to="360 88 92" dur="12s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="76" cy="80" r="1.5" class="ink-fill"/>
+    <circle cx="100" cy="80" r="1.5" class="ink-fill"/>
+    <circle cx="76" cy="104" r="1.5" class="ink-fill"/>
+    <circle cx="100" cy="104" r="1.5" class="ink-fill"/>
+  </g>
+
+  <!-- Open book -->
+  <g class="float-b">
+    <path d="M142 58l28-10 28 10v34l-28 12-28-12V58z" class="ink" stroke-width="2"/>
+    <path d="M170 48v56" class="ink" stroke-width="2"/>
+    <path d="M150 72h16M150 82h12M174 72h16M174 82h12" class="ink" stroke-width="1.8" stroke-linecap="round"/>
+    <rect x="148" y="70" width="18" height="4" rx="2" fill="url(#accentFill)" opacity="0.55"/>
+  </g>
+
+  <!-- Folder -->
+  <g class="float-c">
+    <path d="M248 34h34l8 10h42v38H248V34z" class="ink" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M262 52h30M262 62h22" class="ink" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M248 44h30" stroke="#4a6fa5" stroke-width="3" stroke-linecap="round" opacity="0.35"/>
+  </g>
+
+  <!-- Document -->
+  <g class="float-d">
+    <path d="M338 54h34l12 12v52H338V54z" class="ink" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M350 72h22M350 84h28M350 96h18" class="ink" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M350 108c4 2 8 2 12 0" class="ink" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M350 108c4 2 8 2 12 0" stroke="#e07a5f" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Globe (prominent) -->
+  <g class="float-e" filter="url(#softGlow)">
+    <circle cx="400" cy="112" r="56" fill="none" stroke="#e07a5f" stroke-width="1.5" opacity="0.35">
+      <animate attributeName="r" values="56;62;56" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.25;0.5;0.25" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="112" r="48" stroke="#2d4a6e" stroke-width="2.4" fill="#f8fbff"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 400 112" to="360 400 112" dur="20s" repeatCount="indefinite"/>
+      <ellipse cx="400" cy="112" rx="48" ry="16" stroke="#4a6fa5" stroke-width="1.8" opacity="0.55"/>
+      <path d="M352 112h96M400 64v96" stroke="#4a6fa5" stroke-width="1.6" opacity="0.45"/>
+      <path d="M368 86c16-10 32-14 32-14s16 4 32 14M368 138c16 10 32 14 32 14s16-4 32-14" stroke="#4a6fa5" stroke-width="1.6" opacity="0.45"/>
+      <path d="M378 92c10 8 22 12 22 16s-12 8-22 16M422 92c-10 8-22 12-22 16s12 8 22 16" stroke="#4a6fa5" stroke-width="1.5" opacity="0.5"/>
+      <path fill="url(#globeFill)" d="M382 98c8-6 14-9 20-9 3 0 6 1 9 3-6 3-11 6-16 11-3-2-6-4-13-5zM418 126c5 5 10 8 15 10 3-1 5-2 8-2 5 0 10 3 18 8-4 2-8 3-11 6-5-5-10-8-15-10-5-3-9-6-15-12zM408 108c6 4 12 6 18 6-2 4-6 8-12 10-4-4-8-8-6-16z"/>
+      <circle cx="424" cy="94" r="5" fill="#e07a5f"/>
+      <circle cx="378" cy="128" r="4" fill="#f4a261"/>
+      <circle cx="416" cy="132" r="3.5" fill="#2d4a6e" opacity="0.35"/>
+    </g>
+    <path d="M378 160h44M400 160v12M384 172h32" class="ink" stroke-width="2.4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Speech bubble -->
+  <g class="float-d">
+    <path d="M452 206c0-16 12-28 28-28s28 12 28 28-12 28-28 28h-10l-12 10 4-14h-10c-16 0-28-12-28-28z" class="ink" stroke-width="2.2" stroke-linejoin="round" fill="#fff8f5"/>
+    <path d="M468 198v20M484 198v20M468 198l16 20" stroke="#e07a5f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <animate attributeName="opacity" values="0.55;1;0.55" dur="2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Sparkles -->
+  <g class="sparkle">
+    <path d="M58 168l4 8 8 4-8 4-4 8-4-8-8-4 8-4 4-8z" class="ink" stroke-width="1.5" stroke-linejoin="round"/>
+  </g>
+  <g class="sparkle" style="animation-delay:-1.2s">
+    <path d="M468 48l3 6 6 3-6 3-3 6-3-6-6-3 6-3 3-6z" class="ink" stroke-width="1.5" stroke-linejoin="round"/>
+  </g>
+  <circle cx="52" cy="248" r="4" class="ink sparkle" stroke-width="1.8"/>
+  <circle cx="486" cy="286" r="3" fill="#e07a5f" class="sparkle" style="animation-delay:-0.6s"/>
+  <circle cx="36" cy="132" r="2.5" fill="#4a6fa5" class="sparkle" style="animation-delay:-1.8s"/>
+</svg>

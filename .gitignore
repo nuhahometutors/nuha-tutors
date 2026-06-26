@@ -1,0 +1,5 @@
+.vercel
+.env*
+node_modules/
+admin-password-log.txt
+data/admin-password-log.txt

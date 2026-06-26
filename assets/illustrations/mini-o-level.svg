@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <circle cx="60" cy="60" r="54" fill="#e8f4fc"/>
+  <path d="M60 22L32 38v44l28 16 28-16V38L60 22z" fill="#446084" opacity="0.2" stroke="#446084" stroke-width="1.5"/>
+  <text x="60" y="58" text-anchor="middle" font-family="Poppins,sans-serif" font-size="12" font-weight="700" fill="#446084">O/A</text>
+</svg>

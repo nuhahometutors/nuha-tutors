@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320">
+  <defs>
+    <pattern id="doodle" x="0" y="0" width="160" height="160" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#9bb8d9" stroke-width="1.4" opacity="0.35">
+        <rect x="12" y="18" width="22" height="16" rx="3" fill="#eef4fa"/>
+        <path d="M16 22h14M16 27h10"/>
+        <path d="M52 14l14 8v16l-14 8-14-8V22z" fill="#eef4fa"/>
+        <path d="M52 14v16M38 22h28"/>
+        <circle cx="98" cy="28" r="10" fill="#eef4fa"/>
+        <path d="M93 28h10M98 23v10"/>
+        <path d="M18 68h28M18 76h20M18 84h24"/>
+        <rect x="62" y="62" width="18" height="28" rx="2" fill="#eef4fa"/>
+        <path d="M71 62v28"/>
+        <path d="M108 58c8 0 14 6 14 14s-6 14-14 14" stroke-linecap="round"/>
+        <path d="M12 118l8-12 8 12-8 4z" fill="#eef4fa"/>
+        <rect x="48" y="108" width="36" height="24" rx="4" fill="#eef4fa"/>
+        <path d="M54 116h24M54 122h16"/>
+        <circle cx="108" cy="120" r="8" fill="#eef4fa"/>
+        <path d="M104 120h8"/>
+      </g>
+    </pattern>
+  </defs>
+  <rect width="320" height="320" fill="url(#doodle)"/>
+</svg>
