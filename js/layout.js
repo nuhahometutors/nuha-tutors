@@ -36,8 +36,8 @@
 
   var CONTACT = {
     email: 'NuhaTutors@gmail.com',
-    whatsapp: ['03264702455', '03264702467'],
-    tutorWhatsApp: '03264702455',
+    whatsapp: ['923264702455', '923264702467'],
+    tutorWhatsApp: '923264702455',
     tutorCtaLabel: 'Get Your Tutor Now',
     address: 'DHA Phase 03, Y-Block Lahore, Punjab Pakistan',
     social: [
